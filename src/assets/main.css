@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Kucheryavy';
+  src: url('/fonts/Kucheryavy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MrMand';
+  src: url('/fonts/MrMandRFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Цветовая палитра */
+  --color-primary: #914035;
+  --color-secondary: #5c2720;
+  --color-accent: #688461;
+  --color-dark-green: #17330f;
+  --color-dark-blue: #1b335c;
+  --color-background: #fdeed8;
+
+  /* Шрифты */
+  --font-primary: 'MrMand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Kucheryavy', Georgia, serif;
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-dark-green: var(--color-dark-green);
+  --color-dark-blue: var(--color-dark-blue);
+  --color-background: var(--color-background);
+
+  --font-family-primary: var(--font-primary);
+  --font-family-display: var(--font-display);
+}
+
+.bg-color-background {
+  background-color: var(--color-background);
+}
