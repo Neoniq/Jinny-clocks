@@ -4,7 +4,7 @@ import { ref } from 'vue'
 const age = ref(77)
 const showModal = ref(false)
 const modalTitle = ref('')
-const inputValue = ref('1')
+const inputValue = ref('')
 const isIncrease = ref(true)
 const isClockAnimating = ref(false)
 const isModalClosing = ref(false)
@@ -14,7 +14,7 @@ const openModal = (increase: boolean) => {
   modalTitle.value = increase
     ? 'На сколько лет увеличить возраст?'
     : 'На сколько лет уменьшить возраст?'
-  inputValue.value = '1'
+  inputValue.value = ''
   showModal.value = true
 }
 
